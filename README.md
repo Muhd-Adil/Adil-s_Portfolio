@@ -2,4 +2,4 @@
 
 This is a personal portfolio website
 
-Something I want to create
+I want to create something special;
