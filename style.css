@@ -1,4 +1,4 @@
-*{
+*,*::before,*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,9 +11,10 @@ body{
     color: rgb(148 163 184)  !important;
 }
 
-/* .navbar{
-    background-color:#007c91 ;
-} */
+.navbar{
+   top: 0;
+   z-index: 1000;
+}
 
 input[type="checkbox"]{
     -webkit-appearance: none;
@@ -107,23 +108,22 @@ li:last-child{
     border-radius: 10px;
 }
 
-.hero-section{
+.section{
     height: 100vh;
-    /* margin-top: 5%; */
+    padding: 80px 20px 20px;
 }
-
-.about-section{
-    height: 100vh;
-}
-
-.project-section{
-    height: 100vh;
-}
-
-.contact-section{
-    height: 100vh;
+.section:not(.hero-section){
+    margin-top: 50px;
 }
 
 .footer-section{
     height: 50vh;
+    margin-left: 40px !important;
+}
+
+.social-icons{
+    margin-left: 100px !important;
+}
+.icons{
+    gap: 30px;
 }
