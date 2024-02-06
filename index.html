@@ -82,19 +82,31 @@
     </div>
     <div class="container contact-section section" id="contact">
         <h1 class="fw-bolder heading text-center">CONTACT</h1>
-        <dv class="container d-flex">
-            <div class="container left-sec-para mt-5">
+        <div class="container d-flex justify-content-between">
+            <div class="container left-sec-para mt-5" style="width: 30vw;">
                 <p class="fs-4">Let's Chat <br> Tell me about your <br>project</p>
-                <p class="fs-5">Let's Create something together</p>
-                <div class="mail-box d-flex">
-                    <i class="bi bi-envelope-at-fill"></i>
-                    <p>mail me at <br><a href="mailto:adilrahim43@gmail.com">adilrahim43@gmail.com</a></p>
+                <p style="font-size: 1rem;">Let's Create something together &#129311;</p>
+                <div class="mail-box d-flex justify-content-center align-items-center ps-3 ms-4">
+                    <div class="mail-icon d-flex justify-content-center align-items-center">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>                    
+                    <div>
+                        <p class="">mail me at <a href="mailto:adilrahim43@gmail.com">adilrahim43@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="container msg-form mt-4">
-                
+            <div class="container msg-form mt-4" style="width: 70vw;">
+                <div class="form-heading">Send us a message &#128640;</div>
+                <div class="form mt-3">
+                    <input type="text" class="form-control mb-2" placeholder="Full name*" style="width: 324px;">
+                    <input type="email" class="form-control mb-2" placeholder="Email address*" style="width: 324px;">
+                    <input type="text" class="form-control mb-3" placeholder="Subject(optional)" style="width: 324px;">
+                    <label for="forTextarea" class="form-label">Tell us about your project*</label>
+                    <textarea class="form-control mb-3" id="forTextarea" cols="5" rows="5" style="width: 324px;"></textarea>
+                    <button class="btn btn-primary" type="button" >Send message</button>
+                </div>
             </div>
-        </dv>
+        </div>
     </div>
     <hr>
     <div class="container-fluid footer-section">
