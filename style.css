@@ -60,6 +60,7 @@ nav li a:hover::after {
 .navbar{
    top: 0;
    z-index: 1000;
+   background-color: rgb(22, 32, 53);;
 }
 
 input[type="checkbox"]{
@@ -157,9 +158,6 @@ h1:not(.name-sec h1){
     font-weight: 600;
     /* text-transform: capitalize; */
 }
-.navbar-toggler{
-    border-color: whitesmoke;
-}
 
 li:last-child{
     background-color: #712cf9;
@@ -174,6 +172,49 @@ li:last-child{
     margin-top: 50px;
 }
 
+.msg-form{
+    background-color:rgb(23, 33, 54);
+    padding: 16px !important;
+    width: 356px !important;
+    border-radius: 15px;
+}
+
+.form-heading{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+input,textarea{
+    background-color:rgb(23, 33, 54) !important;
+    border-color: rgb(148 163 184) !important;
+    color: whitesmoke !important;
+}
+
+input::placeholder{
+    color: rgb(148 163 184) !important;
+}
+
+.mail-box{
+    font-size: 15px;
+    width: 250px;
+    height: 60px;
+    line-height: 16px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color:rgb(23, 33, 54);
+    box-shadow: 3px 4px 0.4 0.8;
+}
+
+.mail-box p {
+    padding-top: 12px;
+}
+
+.mail-icon{
+    width: 35px;
+    height: 25px;
+    border-radius: 7px;
+    color: rgb(15 23 42);
+    background-color: whitesmoke;
+}
 .footer-section{
     height: 40vh;
     
