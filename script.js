@@ -16,7 +16,6 @@ const nav = document.querySelector('nav');
 navLinks.forEach(link => {
   link.addEventListener('click', function(event) {
     event.preventDefault(); // Prevent default anchor link behavior
-    console.log(this.hash.substring(1));
     const targetSection = document.getElementById(this.hash.substring(1));
 
     // Enhanced smooth scrolling with optional offset for navbar height
@@ -31,6 +30,5 @@ navLinks.forEach(link => {
           behavior: 'smooth'
         });
       }
-    console.log(100);
   });
 });
