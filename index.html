@@ -35,14 +35,17 @@
                         <a href="#about" class="nav-link mylink">About</a>
                     </li>
                     <li class="nav-item me-3">
+                        <a href="#skill" class="nav-link mylink">Skills</a>
+                    </li>
+                    <li class="nav-item me-3">
                         <a href="#projects" class="nav-link mylink">Projects</a>
                     </li>
-                    <li class="nav-item me-5">
+                    <li class="nav-item me-2">
                         <a href="#contact" class="nav-link mylink">Contact</a>
                     </li>
-                    <li class="nav-item me-4 ps-1 pe-1">
-                        <a href="#" class="nav-link res"><i class="bi bi-download pe-2"></i>Resume</a>
-                    </li>
+                    <!-- <li class="nav-item me-4 ps-1 pe-1">
+                        
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -52,15 +55,20 @@
             <h1 class="fw-bolder">HEY I'M <span class="name-spc"></span></h1>
         </div>
         <div class="self-intro text-center">
-            <p class="fs-5 mt-3">
-                A Full Stack Developer helps to build the Websites and Web Applications that leads to the success of the overall product
-            </p>
+            <div class="first-para">
+                <p class="fs-5 mt-3">
+                    A Full Stack Developer helps to build the Websites and Web Applications that leads to the success of the overall product
+                </p>    
+            </div>
+            <div class="resume-btn">
+                <a href="#" class="nav-link res"><i class="bi bi-download pe-2"></i>Resume</a>
+            </div>
         </div>
     </div>
     <div class="container about-section section" id="about">
-        <h1 class="fw-bolder heading text-center">ABOUT ME</h1>
+        <h2 class="fw-bolder heading text-center">ABOUT ME</h2>
         <div class="selfintro-sec mt-5">
-            <p class="about-para fs-5">
+            <p class="about-para" style="font-size: 1rem;">
                 Welcome to my corner of the web! I'm Muhammed Adil, a passionate Full Stack Developer on an exciting journey
                  in the world of technology. As a fresh mind eager to explore and innovate, I thrive on crafting seamless 
                  digital experiences that marry the art of design with the science of programming. <br>
@@ -75,16 +83,32 @@
                  Thank you for visiting, and I look forward to embarking on this journey with you!
             </p>    
         </div>
-        
+    </div>
+    <div class="container skill-section section" id="skill">
+        <h2 class="fw-bolder heading text-center">SKILLS</h2>
+        <div class="skills">
+            <div class="skill-item">
+                <img src="/images/html.svg" alt="HTML5">
+                <img src="/images/css.svg" alt="HTML5">
+                <img src="/images/javascript.svg" alt="HTML5">
+                <img src="/images/Bootstrap_logo.svg.png" alt="HTML5">
+                <img src="/images/jquery.svg" alt="HTML5">
+                <img src="/images/python.svg" alt="HTML5">
+                <img src="/images/django.svg" alt="HTML5">
+                <img src="/images/git.svg" alt="HTML5">
+                <img src="/images/github.svg" alt="HTML5">
+                <img src="/images/mysql.svg" alt="HTML5">
+            </div>
+        </div>
     </div>
     <div class="container project-section section" id="projects">
-        <h1 class="fw-bolder heading text-center">PROJECTS</h1>        
+        <h2 class="fw-bolder heading text-center">PROJECTS</h2>        
     </div>
     <div class="container contact-section section" id="contact">
-        <h1 class="fw-bolder heading text-center">CONTACT</h1>
+        <h2 class="fw-bolder heading text-center">CONTACT</h2>
         <div class="container d-flex justify-content-between">
             <div class="container left-sec-para mt-5" style="width: 30vw;">
-                <p class="fs-4">Let's Chat <br> Tell me about your <br>project</p>
+                <p class="fs-4">Drop Me a Message</p>
                 <p style="font-size: 1rem;">Let's Create something together &#129311;</p>
                 <div class="mail-box d-flex justify-content-center align-items-center ps-3 ms-4">
                     <div class="mail-icon d-flex justify-content-center align-items-center">
@@ -98,11 +122,11 @@
             <div class="container msg-form mt-4" style="width: 70vw;">
                 <div class="form-heading">Send us a message &#128640;</div>
                 <div class="form mt-3">
-                    <input type="text" class="form-control mb-2" placeholder="Full name*" style="width: 324px;">
-                    <input type="email" class="form-control mb-2" placeholder="Email address*" style="width: 324px;">
-                    <input type="text" class="form-control mb-3" placeholder="Subject(optional)" style="width: 324px;">
-                    <label for="forTextarea" class="form-label">Tell us about your project*</label>
-                    <textarea class="form-control mb-3" id="forTextarea" cols="5" rows="5" style="width: 324px;"></textarea>
+                    <input type="text" class="form-control mb-3" placeholder="Full name*" style="width: 324px;">
+                    <input type="email" class="form-control mb-3" placeholder="Email address*" style="width: 324px;">
+                    <!-- <input type="text" class="form-control mb-3" placeholder="Subject(optional)" style="width: 324px;">
+                    <label for="forTextarea" class="form-label">Tell us about your project*</label> -->
+                    <textarea class="form-control mb-3" cols="5" rows="5" style="width: 324px;" placeholder="Message*"></textarea>
                     <button class="btn btn-primary" type="button" >Send message</button>
                 </div>
             </div>
