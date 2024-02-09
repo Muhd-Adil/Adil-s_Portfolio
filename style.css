@@ -153,9 +153,9 @@ h2:not(.name-sec h1){
 }
 
 .msg-form{
-    background-color:rgb(23, 33, 54);
+    background-color:#172136;
     padding: 16px !important;
-    width: 356px !important;
+    width: 22.5rem !important;
     border-radius: 15px;
 }
 
