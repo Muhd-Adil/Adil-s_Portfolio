@@ -13,28 +13,14 @@ body{
     color: rgb(148 163 184)  !important;
 }
 
-nav li a:not(.res){
-    transition: all 0.1s ease-in-out !important;
-}
-nav li a {
-    position: relative; /* Create container for underline */
-}
-  
-nav li a::after {
-    content: "";
-    position: absolute;
-    bottom: -1px; /* Adjust y-position as needed */
-    left: 6px;
-    width: 0;
-    height: 2px;
-    text-align: center;
-    background-color: #fff; /* Customize underline color */
-    transition: width 0.3s ease-in-out;
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
 }
 
-  
-nav li a:hover::after {
-    width: 87%;
+::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+    border-radius: 100px;
 }
 
 .border-bottom .border-light{
@@ -45,7 +31,7 @@ nav li a:hover::after {
 .navbar{
    top: 0;
    z-index: 1000;
-   background-color: rgb(22, 32, 53);;
+   background-color: rgb(22, 32, 53);
 }
 
 input[type="checkbox"]{
@@ -69,7 +55,7 @@ input[type="checkbox"]{
 }
 
 .bar .top{
-    bottom: 5px;
+    bottom: 4px;
     height: 3px;
     width: 30px;
     background: whitesmoke;
@@ -79,7 +65,7 @@ input[type="checkbox"]{
 }
 
 .bar .bottom{
-    top: 8px;
+    top: 7px;
     height: 3px;
     width: 30px;
     background: whitesmoke;
@@ -146,6 +132,9 @@ h2:not(.name-sec h1){
 
 .section{
     height: 100vh;
+    word-spacing: 0.10rem;
+    line-height: 1.4rem;
+    /* text-align: justify !important; */
     /* padding: 80px 20px 20px; */
 }
 .section:not(.hero-section){
@@ -173,9 +162,34 @@ input::placeholder,textarea::placeholder{
     color: rgb(148 163 184) !important;
 }
 
+.skills{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 100px !important;
+    row-gap: 50px;
+}
+
+.skill-item{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(22, 32, 53);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.skill-item:hover{
+    box-shadow: 4px 8px 16px black ;
+}
+
 .skill-item img{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .mail-box{
     font-size: 15px;
@@ -199,14 +213,8 @@ input::placeholder,textarea::placeholder{
     color: rgb(15 23 42);
     background-color: whitesmoke;
 }
-.footer-section{
-    height: 40vh;
-    
-}
 
-.social-icons{
-    margin-left: 100px !important;
-}
+
 .icons i{
     color:  rgb(148 163 184);
     transition: color 0.1s ease-in-out;
