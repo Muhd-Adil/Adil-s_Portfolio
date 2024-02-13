@@ -1,3 +1,4 @@
+/*Basic styling*/
 *,*::before,*::after{
     margin: 0;
     padding: 0;
@@ -23,16 +24,29 @@ body{
     border-radius: 100px;
 }
 
-.border-bottom .border-light{
-    border-bottom-width: 5px !important;
-}
-
+/* Navbar section goes here*/
 
 .navbar{
    top: 0;
    z-index: 1000;
    background-color: rgb(22, 32, 53);
 }
+
+/* .mylink::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: whitesmoke;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mylink:hover::after{
+    transform: scaleX(0.4);
+} */
 
 input[type="checkbox"]{
     -webkit-appearance: none;
@@ -91,9 +105,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
     opacity: 0;
 }
 
-h2:not(.name-sec h1){
-    color: whitesmoke !important;
-}
 .navbar-brand,a{
     color:whitesmoke !important;
 }
@@ -102,6 +113,9 @@ h2:not(.name-sec h1){
     color: #ff7f50 !important;
 }
 
+h2:not(.name-sec h1){
+    color: whitesmoke !important;
+}
 
 .about-para{
     text-align: justify;
@@ -130,6 +144,8 @@ h2:not(.name-sec h1){
     transform: translateY(-2px);
 }
 
+/* Section Wise */
+
 .section{
     height: 100vh;
     word-spacing: 0.10rem;
@@ -141,34 +157,13 @@ h2:not(.name-sec h1){
     margin-top: 50px;
 }
 
-.msg-form{
-    background-color:#172136;
-    padding: 16px !important;
-    width: 22.5rem !important;
-    border-radius: 15px;
-}
-
-.form-heading{
-    font-size: 1.3rem;
-    color: whitesmoke;
-}
-input,textarea{
-    background-color:rgb(23, 33, 54) !important;
-    border-color: rgb(148 163 184) !important;
-    color: whitesmoke !important;
-}
-
-input::placeholder,textarea::placeholder{
-    color: rgb(148 163 184) !important;
-}
-
+/* Skill Section */
 .skills{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 100px !important;
-    row-gap: 50px;
+    gap: 50px;
 }
 
 .skill-item{
@@ -187,10 +182,18 @@ input::placeholder,textarea::placeholder{
     box-shadow: 4px 8px 16px black ;
 }
 
-.skill-item img{
+.skill-item img ,.skill-item i{
     width: 2.5rem;
     height: 2.5rem;
+    transition: transform 0.2s ease-in-out;
 }
+
+.skill-item img:hover , .skill-item i:hover{
+    transform: scale(1.2);
+}
+
+
+/* Contact Section */
 .mail-box{
     font-size: 15px;
     width: 250px;
@@ -214,7 +217,44 @@ input::placeholder,textarea::placeholder{
     background-color: whitesmoke;
 }
 
+.msg-form{
+    background-color:#172136;
+    padding: 16px !important;
+    width: 22.5rem !important;
+    border-radius: 15px;
+}
 
+@media (max-width:576px){
+    .msg-form{
+        width: 18.5rem !important;
+    }
+    .left-sec-para{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+    .skill-section .row .skills{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 20px;
+    } 
+}
+.form-heading{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+input,textarea{
+    background-color:rgb(23, 33, 54) !important;
+    border-color: rgb(148 163 184) !important;
+    color: whitesmoke !important;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgb(148 163 184) !important;
+}
+
+/* Footer section */
 .icons i{
     color:  rgb(148 163 184);
     transition: color 0.1s ease-in-out;
