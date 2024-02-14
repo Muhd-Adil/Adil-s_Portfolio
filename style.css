@@ -160,10 +160,11 @@ h2:not(.name-sec h1){
 /* Skill Section */
 .skills{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-row: repeat(3,1fr);
+    /* flex-wrap: wrap; */
+    row-gap: 40px;
 }
 
 .skill-item{
@@ -172,6 +173,7 @@ h2:not(.name-sec h1){
     background-color: rgb(22, 32, 53);
     border-radius: 20px;
     display: flex;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -233,12 +235,16 @@ h2:not(.name-sec h1){
         flex-direction: column !important;
         justify-content: center;
     }
-    .skill-section .row .skills{
+    /* .skill-section .row .skills{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
-    } 
+    }  */
+
+    .about-section{
+        height: 115vh !important;
+    }
 }
 .form-heading{
     font-size: 1.3rem;
