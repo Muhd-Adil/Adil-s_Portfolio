@@ -29,9 +29,6 @@
                         <span class="bottom"></span>
                     </div>
                 </label>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 me-5 mb-lg-0">
                         <li class="nav-item me-3">
@@ -49,9 +46,6 @@
                         <li class="nav-item me-2">
                             <a href="#contact" class="nav-link mylink">Contact</a>
                         </li>
-                        <!-- <li class="nav-item me-4 ps-1 pe-1">
-                        
-                    </li> -->
                     </ul>
                 </div>
             </div>
@@ -67,7 +61,7 @@
                         success of the overall product.
                     </p>
                 </div>
-                <div class="resume-btn">
+                <div class="resume-btn mt-3">
                     <a href="#" class="nav-link res"><i class="bi bi-download pe-2"></i>Resume</a>
                 </div>
             </div>
@@ -75,25 +69,29 @@
         <div class="container about-section section" data-aos="fade-up-right"  id="about">
             <h2 class="fw-bolder heading text-center">ABOUT ME<i class="fa-solid fa-house" style="color: #74C0FC;"></i></h2>
             <div class="selfintro-sec mt-5">
-                <p class="about-para" style="font-size: 1rem;">
-                    Welcome to my corner of the web! I'm Muhammed Adil, a passionate Full Stack Developer on an exciting
-                    journey
-                    in the world of technology. As a fresh mind eager to explore and innovate, I thrive on crafting
-                    seamless
-                    digital experiences that marry the art of design with the science of programming. <br>
-                    Beyond writing code, I'm driven by a relentless curiosity to learn and grow. I thrive in
-                    collaborative
-                    environments where ideas are exchanged freely and innovation flourishes. Whether it's mastering a new
-                    programming language, experimenting with emerging technologies, or embracing best practices in
-                    software development, I approach each day with a sense of purpose and a commitment to excellence.
-                    <br>
-                    I invite you to explore my portfolio and discover the projects that showcase my skills, passion, and
-                    dedication to the craft of software development. Whether you're a fellow developer, a potential
-                    collaborator,
-                    or simply curious about what I bring to the table, I'm excited to connect and explore the endless
-                    possibilities together. <br><br>
-                    Thank you for visiting, and I look forward to embarking on this journey with you!
-                </p>
+                <div class="about-para" style="font-size: 1rem;">
+                    <p class="mb-2">
+                        Welcome to my corner of the web! I'm Muhammed Adil, a passionate Full Stack Developer on an exciting
+                        journey in the world of technology. As a fresh mind eager to explore and innovate, I thrive on crafting
+                        seamless digital experiences that marry the art of design with the science of programming.
+                    </p>
+                    <p class="mb-2">
+                        Beyond writing code, I'm driven by a relentless curiosity to learn and grow. I thrive in
+                        collaborative environments where ideas are exchanged freely and innovation flourishes. Whether it's mastering a new
+                        programming language, experimenting with emerging technologies, or embracing best practices in
+                        software development, I approach each day with a sense of purpose and a commitment to excellence.
+                    </p>
+                    <p>
+                        I invite you to explore my portfolio and discover the projects that showcase my skills, passion, and
+                        dedication to the craft of software development. Whether you're a fellow developer, a potential
+                        collaborator, or simply curious about what I bring to the table, I'm excited to connect and explore the endless
+                        possibilities together. 
+                    </p>
+                    <p class="mb-3">Thank you for visiting, and I look forward to embarking on this journey with you!</p>
+                    <!-- <div class="resume-btn">
+                        <a href="#contact" class="nav-link res">Contact me</a>
+                    </div> -->
+                </div>
             </div>
         </div>
         <div class="container skill-section section" data-aos="fade-up-right" id="skill">
@@ -109,7 +107,7 @@
                     <div class="skill-item"><img src="/images/django.svg" alt="Django"></div>
                     <div class="skill-item"><img src="/images/git.svg" alt="Git"></div>
                     <div class="skill-item"><i class="bi bi-github" style="font-size: 2.4rem;"></i></div>
-                    <div class="skill-item"><img src="/images/mysql.svg" alt="MySql"></div>
+                    <div class="skill-item"><img src="/images/mysql.svg" alt="MySql" style="font-size: 3rem;"></div>
                 </div>
             </div>
         </div>
@@ -118,11 +116,11 @@
         </div>
         <div class="container contact-section section" id="contact" data-aos="fade-up-right" >
             <h2 class="fw-bolder heading text-center">CONTACT</h2>
-            <div class="row">
-                <div class="container left-sec-para col-sm-12 col-lg-4">
+            <div class="row mt-5">
+                <div class="container left-sec-para col-sm-12 col-lg-4 d-flex flex-column">
                     <div class="fs-4">Drop Me a Message</div>
                     <div style="font-size: 1rem;">Let's Create something together &#129311;</div>
-                    <div class="mail-box d-flex justify-content-center align-items-center ps-3 ms-4">
+                    <div class="mail-box d-flex justify-content-center align-items-center ps-3 ">
                         <div class="mail-icon d-flex justify-content-center align-items-center">
                             <i class="bi bi-envelope-at-fill"></i>
                         </div>
@@ -131,14 +129,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="container msg-form mt-4 col-sm-12 col-lg-8">
+                <div class="container msg-form col-sm-12 col-lg-8">
                     <div class="form-heading">Send us a message &#128640;</div>
                     <div class="form mt-3">
                         <input type="text" class="form-control mb-3" placeholder="Full name*">
                         <input type="email" class="form-control mb-3" placeholder="Email address*">
                         <!-- <input type="text" class="form-control mb-3" placeholder="Subject(optional)" style="width: 324px;">
                     <label for="forTextarea" class="form-label">Tell us about your project*</label> -->
-                        <textarea class="form-control mb-3" cols="5" rows="5" 
+                        <textarea class="form-control mb-3" cols="5" rows="7" 
                             placeholder="Message*"></textarea>
                         <button class="btn btn-primary" type="button">Send message</button>
                     </div>
@@ -146,22 +144,22 @@
             </div>
         </div>
         <hr>
-        <div class="row footer-sec ps-5 pe-5" data-aos="fade-bottom">
+        <div class="row footer-section ps-5 pe-5" data-aos="fade-bottom">
             <div class="selfintro-footer col-lg-9 col-sm-12" style="padding-right: 30%;">
-                <h4>MUHAMMED ADIL</h4>
+                <h5>MUHAMMED ADIL</h5>
                 <p class="mt-3">
                     A Full Stack Developer helps to build the Websites and Web Applications that leads to the
                     success of the overall product
                 </p>
             </div>
             <div class="social-icons col-lg-3 col-sm-12">
-                <h4>SOCIALS</h4>
+                <h5>SOCIALS</h5>
                 <div class="icons d-flex mt-4">
-                    <a href=""><i class="bi bi-twitter-x" style="font-size: 1.2rem;"></i></a>
-                    <a href=""><i class="bi bi-instagram" style="font-size: 1.2rem;"></i></a>
-                    <a href=""><i class="bi bi-github" style="font-size: 1.2rem;"></i></a>
-                    <a href=""><i class="bi bi-linkedin" style="font-size: 1.2rem;"></i></a>
-                    <a href=""><i class="bi bi-facebook" style="font-size: 1.2rem;"></i></a>
+                    <a href=""><i class="bi bi-twitter-x" style="font-size: 1.1rem;"></i></a>
+                    <a href=""><i class="bi bi-instagram" style="font-size: 1.1rem;"></i></a>
+                    <a href=""><i class="bi bi-github" style="font-size: 1.1rem;"></i></a>
+                    <a href=""><i class="bi bi-linkedin" style="font-size: 1.1rem;"></i></a>
+                    <a href=""><i class="bi bi-facebook" style="font-size: 1.1rem;"></i></a>
                 </div>
             </div>
         </div>
@@ -172,6 +170,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script>
         AOS.init();
     </script>
