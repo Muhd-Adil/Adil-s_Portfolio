@@ -158,10 +158,11 @@ h2:not(.name-sec h1){
 /* Skill Section */
 .skills{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-row: repeat(3,1fr);
+    /* flex-wrap: wrap; */
+    row-gap: 40px;
 }
 
 .skill-item{
@@ -170,6 +171,7 @@ h2:not(.name-sec h1){
     background-color: var(--bgop-clr);
     border-radius: 20px;
     display: flex;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -239,15 +241,20 @@ h2:not(.name-sec h1){
         align-items: center;
         margin-bottom: 1.2rem;
     }
+<<<<<<< HEAD
     .about-section{
         height: 120vh;
     }
 
     .skill-section .row .skills{
+=======
+    /* .skill-section .row .skills{
+>>>>>>> 4c805cca7175990c0115a4d1eb0cfb03d2dc8be4
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
+<<<<<<< HEAD
     } 
 
     .selfintro-footer{
@@ -260,6 +267,12 @@ h2:not(.name-sec h1){
 
     .social-icons .icons{
         margin-top: 1rem !important;
+=======
+    }  */
+
+    .about-section{
+        height: 115vh !important;
+>>>>>>> 4c805cca7175990c0115a4d1eb0cfb03d2dc8be4
     }
 }
 .form-heading{
