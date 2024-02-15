@@ -241,39 +241,15 @@ h2:not(.name-sec h1){
         align-items: center;
         margin-bottom: 1.2rem;
     }
-<<<<<<< HEAD
     .about-section{
         height: 120vh;
     }
-
     .skill-section .row .skills{
-=======
-    /* .skill-section .row .skills{
->>>>>>> 4c805cca7175990c0115a4d1eb0cfb03d2dc8be4
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
-<<<<<<< HEAD
     } 
-
-    .selfintro-footer{
-        padding-right: 0px !important;
-    }
-
-    .footer-section{
-        margin-left: -3rem;
-    }
-
-    .social-icons .icons{
-        margin-top: 1rem !important;
-=======
-    }  */
-
-    .about-section{
-        height: 115vh !important;
->>>>>>> 4c805cca7175990c0115a4d1eb0cfb03d2dc8be4
-    }
 }
 .form-heading{
     font-size: 1.3rem;
