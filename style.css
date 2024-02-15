@@ -5,48 +5,47 @@
     box-sizing: border-box;
     font-family: 'Montserrat' , sans-serif !important;
 }
+
+/* Variables */
+
+:root{
+    --primary-clr:rgb(15 23 42);
+    --secondary-clr:rgb(148 163 184);
+    --accent-clr:whitesmoke;
+    --bgop-clr:rgb(22, 32, 53);
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color:rgb(15 23 42) !important; 
-    color: rgb(148 163 184)  !important;
+    background-color: var(--primary-clr)!important; 
+    color: var(--secondary-clr) !important;
 }
 
+/* For Scrollbar animation */
 ::-webkit-scrollbar{
     background-color: transparent;
     width: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: whitesmoke;
+    background-color: var(--secondary-clr);
     border-radius: 100px;
 }
 
+::-webkit-scrollbar-thumb:hover{
+    background-color:var(--accent-clr);
+}
 /* Navbar section goes here*/
 
 .navbar{
    top: 0;
    z-index: 1000;
-   background-color: rgb(22, 32, 53);
+   background-color: var(--bgop-clr);
 }
 
-/* .mylink::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: whitesmoke;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-}
-
-.mylink:hover::after{
-    transform: scaleX(0.4);
-} */
 
 input[type="checkbox"]{
     -webkit-appearance: none;
@@ -62,7 +61,7 @@ input[type="checkbox"]{
 .bar .middle{
     height: 3px;
     width: 30px;
-    background: whitesmoke;
+    background: var(--accent-clr);
     border-radius: 50px;
     position: absolute;
     transition: 0.3s ease;
@@ -72,7 +71,7 @@ input[type="checkbox"]{
     bottom: 4px;
     height: 3px;
     width: 30px;
-    background: whitesmoke;
+    background: var(--accent-clr);
     border-radius: 50px;
     position: absolute;
     transition: 0.3s ease;
@@ -82,7 +81,7 @@ input[type="checkbox"]{
     top: 7px;
     height: 3px;
     width: 30px;
-    background: whitesmoke;
+    background: var(--accent-clr);
     border-radius: 50px;
     position: absolute;
     transition: 0.3s ease;
@@ -106,7 +105,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
 }
 
 .navbar-brand,a{
-    color:whitesmoke !important;
+    color:var(--accent-clr) !important;
 }
 
 .navbar-brand:hover, nav a:hover{
@@ -114,7 +113,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
 }
 
 h2:not(.name-sec h1){
-    color: whitesmoke !important;
+    color: var(--accent-clr)!important;
 }
 
 .about-para{
@@ -127,9 +126,8 @@ h2:not(.name-sec h1){
 }
 
 .name-spc{
-    color: whitesmoke !important;
+    color:var(--accent-clr) !important;
     font-weight: 600;
-    /* text-transform: capitalize; */
 }
 
 .resume-btn{
@@ -137,7 +135,7 @@ h2:not(.name-sec h1){
     border-radius: 10px;
     padding: .5em 1em;
     display: inline-block;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     transition: transform 0.3s ease-in-out;
 }
 .resume-btn:hover{
@@ -169,7 +167,7 @@ h2:not(.name-sec h1){
 .skill-item{
     width: 90px;
     height: 90px;
-    background-color: rgb(22, 32, 53);
+    background-color: var(--bgop-clr);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -182,7 +180,7 @@ h2:not(.name-sec h1){
     box-shadow: 4px 8px 16px black ;
 }
 
-.skill-item img ,.skill-item i{
+.skill-item img{
     width: 2.5rem;
     height: 2.5rem;
     transition: transform 0.2s ease-in-out;
@@ -194,6 +192,11 @@ h2:not(.name-sec h1){
 
 
 /* Contact Section */
+
+.left-sec-para{
+    gap: 20px;
+}
+
 .mail-box{
     font-size: 15px;
     width: 250px;
@@ -201,7 +204,7 @@ h2:not(.name-sec h1){
     line-height: 16px;
     gap: 10px;
     border-radius: 10px;
-    background-color:rgb(23, 33, 54);
+    background-color:var(--bgop-clr);
     box-shadow: 3px 4px 0.4 0.8;
 }
 
@@ -214,7 +217,7 @@ h2:not(.name-sec h1){
     height: 25px;
     border-radius: 7px;
     color: rgb(15 23 42);
-    background-color: whitesmoke;
+    background-color:var(--accent-clr);
 }
 
 .msg-form{
@@ -226,42 +229,62 @@ h2:not(.name-sec h1){
 
 @media (max-width:576px){
     .msg-form{
-        width: 18.5rem !important;
+        width: 19rem !important;
     }
     .left-sec-para{
         display: flex !important;
+        width: 22.5rem;
+        gap: 10px;
         flex-direction: column !important;
-        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.2rem;
     }
+    .about-section{
+        height: 120vh;
+    }
+
     .skill-section .row .skills{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
     } 
+
+    .selfintro-footer{
+        padding-right: 0px !important;
+    }
+
+    .footer-section{
+        margin-left: -3rem;
+    }
+
+    .social-icons .icons{
+        margin-top: 1rem !important;
+    }
 }
 .form-heading{
     font-size: 1.3rem;
-    color: whitesmoke;
+    color:var(--accent-clr);
 }
 input,textarea{
-    background-color:rgb(23, 33, 54) !important;
-    border-color: rgb(148 163 184) !important;
-    color: whitesmoke !important;
+    background-color:var(--bgop-clr) !important;
+    border-color: var(--secondary-clr) !important;
+    color:var(--accent-clr) !important;
 }
 
 input::placeholder,textarea::placeholder{
-    color: rgb(148 163 184) !important;
+    color: var(--secondary-clr) !important;
 }
 
 /* Footer section */
+
 .icons i{
-    color:  rgb(148 163 184);
+    color: var(--secondary-clr);
     transition: color 0.1s ease-in-out;
 }
 
 .icons i:hover{
-    color: whitesmoke;
+    color:var(--accent-clr);
 }
 .icons{
     gap: 30px;

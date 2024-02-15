@@ -32,3 +32,27 @@ navLinks.forEach(link => {
       }
   });
 });
+
+
+// For Navbar fading
+
+$(document).ready(function(){
+  $('.navbar-nav a').on('click', function(){
+    if ($('.navbar-collapse').hasClass('show')) {
+      $('.navbar-collapse').removeClass('show');
+    }
+  });
+});
+
+
+
+
+
+
+
+
+// $(document).ready(function(){
+//   $(".navbar-nav a").on("click",function(){
+//     $(".navbar-collapse").hide();
+//   });
+// });
