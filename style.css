@@ -72,7 +72,7 @@ input[type="checkbox"]:hover{
 }
 
 .bar .top{
-    bottom: 4px;
+    bottom: 3px;
     height: 3px;
     width: 30px;
     background: var(--accent-clr);
@@ -82,7 +82,7 @@ input[type="checkbox"]:hover{
 }
 
 .bar .bottom{
-    top: 7px;
+    top: 6px;
     height: 3px;
     width: 30px;
     background: var(--accent-clr);
@@ -106,6 +106,14 @@ input[type="checkbox"]:checked ~ .bar .bottom{
 input[type="checkbox"]:checked ~ .bar .middle{
     transform: translate(20px);
     opacity: 0;
+}
+
+.navbar-brand{
+    margin-top:10px ;
+}
+
+.navbar label{
+    margin-top: -4px;
 }
 
 .navbar-brand,a{
@@ -221,11 +229,6 @@ h2:not(.name-sec h1){
     transition: transform 0.2s ease-in-out;
 }
 
-/* .skill-item img:hover , .skill-item i:hover{
-    transform: scale(1.2);
-} */
-
-
 /* Contact Section */
 
 .left-sec-para{
@@ -316,6 +319,16 @@ h2:not(.name-sec h1){
     }
     .msg-form{
         width: 27rem !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:900px){
+    .hero-sec-socials{
+        display: none;
+    }
+
+    .first-para {
+        padding: 0px 80px;
     }
 }
 .form-heading{
