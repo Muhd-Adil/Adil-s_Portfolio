@@ -33,26 +33,37 @@ navLinks.forEach(link => {
   });
 });
 
-
 // For Navbar fading
 
 $(document).ready(function(){
   $('.navbar-nav a').on('click', function(){
-    if ($('.navbar-collapse').hasClass('show')) {
+
+    if($('.navbar-collapse').hasClass('show'))
+    { 
       $('.navbar-collapse').removeClass('show');
+      $('#MyCheckbox').prop('checked', false);
     }
+
+
+   
   });
+});
+
+//For Skill-section hover
+$(document).ready(function(){
+  $(".skill-item").hover(function(){
+    $(this).find('.sk').css(
+      "transform","scale(1.2)"
+    );
+  },
+  function(){
+    $("img,i").css(
+      "transform","none"
+    );
+  })
 });
 
 
 
 
 
-
-
-
-// $(document).ready(function(){
-//   $(".navbar-nav a").on("click",function(){
-//     $(".navbar-collapse").hide();
-//   });
-// });

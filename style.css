@@ -53,7 +53,11 @@ input[type="checkbox"]{
     display: none;
 }
 
-.bar,label{
+input[type="checkbox"]:hover{
+    cursor: pointer !important;
+}
+
+.bar{
     position: relative;
     cursor: pointer;
 }
@@ -155,12 +159,41 @@ h2:not(.name-sec h1){
     margin-top: 50px;
 }
 
+/* Hero Section */
+.hero-sec-socials{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:var(--bgop-clr);
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+    box-shadow: 4px 6px 16px black ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.hero-social i{
+    color: var(--secondary-clr);
+    transition: color 0.3s ease-in;
+}
+
+.hero-social i:hover{
+    color: var(--accent-clr);
+}
+
+.first-para {
+    padding: 0px 130px;
+}
+
 /* Skill Section */
 .skills{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-row: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
     /* flex-wrap: wrap; */
     row-gap: 40px;
 }
@@ -182,21 +215,21 @@ h2:not(.name-sec h1){
     box-shadow: 4px 8px 16px black ;
 }
 
-.skill-item img{
+.skill-item img ,.skill-item i{
     width: 2.5rem;
     height: 2.5rem;
     transition: transform 0.2s ease-in-out;
 }
 
-.skill-item img:hover , .skill-item i:hover{
+/* .skill-item img:hover , .skill-item i:hover{
     transform: scale(1.2);
-}
+} */
 
 
 /* Contact Section */
 
 .left-sec-para{
-    gap: 20px;
+    gap: 10px;
 }
 
 .mail-box{
@@ -230,26 +263,60 @@ h2:not(.name-sec h1){
 }
 
 @media (max-width:576px){
+    
+    .first-para {
+        padding: 0px;
+    }
+
+    .hero-sec-socials{
+        display: none
+    }
+
     .msg-form{
         width: 19rem !important;
     }
     .left-sec-para{
-        display: flex !important;
-        width: 22.5rem;
-        gap: 10px;
-        flex-direction: column !important;
-        align-items: center;
         margin-bottom: 1.2rem;
     }
     .about-section{
-        height: 120vh;
+        height: 120vh !important;
     }
+    .contact-section{
+        height: auto !important;
+    }
+
+    .contact-section .row{
+        margin-top: 1.3rem !important;
+    }
+
     .skill-section .row .skills{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
+    }
+
+    .footer-section{
+        margin-left: -2.5rem !important;
+    }
+
+    .selfintro-footer{
+        padding-right: 0 !important;
     } 
+    .social-icons{
+        margin-top: 1rem;
+    }
+    .icons{
+        padding-top: .5rem;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .left-sec-para{
+        margin-bottom: 1.2rem;
+    }
+    .msg-form{
+        width: 27rem !important;
+    }
 }
 .form-heading{
     font-size: 1.3rem;

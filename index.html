@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <a href="#" class="navbar-brand ms-5 mt-2 h3">MUHAMMED ADIL</a>
                 <label class="me-5 d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <input type="checkbox">
+                    <input type="checkbox" id="MyCheckbox">
                     <div class="bar">
                         <span class="top"></span>
                         <span class="middle"></span>
@@ -50,23 +50,32 @@
                 </div>
             </div>
         </nav>
-        <div class="container d-flex flex-column justify-content-center hero-section section" data-aos="fade-up-right"  id="hero">
-            <div class="name-sec text-center">
-                <h1 class="fw-bolder">HEY I'M <span class="name-spc"></span></h1>
+        <div class="container-fluid d-flex flex-column justify-content-center hero-section section" data-aos="fade-right"  id="hero">
+            <div class="hero-section-content">
+                <div class="name-sec text-center">
+                    <h1 class="fw-bolder">HEY I'M <span class="name-spc"></span></h1>
+                </div>
+                <div class="self-intro text-center">
+                    <div class="first-para">
+                        <p class="fs-5 mt-3">
+                            A Full Stack Developer helps to build the Websites and Web Applications that leads to the
+                            success of the overall product.
+                        </p>
+                    </div>
+                    <div class="resume-btn mt-3">
+                        <a href="#" class="nav-link res"><i class="bi bi-download pe-2"></i>Resume</a>
+                    </div>
+                </div>
             </div>
-            <div class="self-intro text-center">
-                <div class="first-para">
-                    <p class="fs-5 mt-3">
-                        A Full Stack Developer helps to build the Websites and Web Applications that leads to the
-                        success of the overall product.
-                    </p>
-                </div>
-                <div class="resume-btn mt-3">
-                    <a href="#" class="nav-link res"><i class="bi bi-download pe-2"></i>Resume</a>
-                </div>
+            <div class="hero-sec-socials">
+                <div class="hero-social"><a href="https://twitter.com/Muhd_Adil_X" target="_blank"><i class="bi bi-twitter-x" style="font-size: 1.4rem;"></i></a></div>
+                <div class="hero-social"><a href="https://www.instagram.com/muhd._adil?igsh=cmVrdDNsdGlpdm54" target="_blank"><i class="bi bi-instagram" style="font-size: 1.4rem;"></i></a></div>
+                <div class="hero-social"><a href="https://github.com/MuhdAdil13" target="_blank"><i class="bi bi-github" style="font-size: 1.4rem;"></i></a></div>
+                <div class="hero-social"><a href="https://www.linkedin.com/in/adil-rahim-714814253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.4rem;"></i></a></div>
+                <div class="hero-social"><a href="#"><i class="bi bi-facebook" style="font-size: 1.4rem;"></i></a></div>
             </div>
         </div>
-        <div class="container about-section section" data-aos="fade-up-right"  id="about">
+        <div class="container about-section section" data-aos="fade-right"  id="about">
             <h2 class="fw-bolder heading text-center">ABOUT ME<i class="fa-solid fa-house" style="color: #74C0FC;"></i></h2>
             <div class="selfintro-sec mt-5">
                 <div class="about-para" style="font-size: 1rem;">
@@ -94,30 +103,30 @@
                 </div>
             </div>
         </div>
-        <div class="container skill-section section" data-aos="fade-up-right" id="skill">
+        <div class="container skill-section section" data-aos="fade-right" id="skill">
             <h2 class="fw-bolder heading text-center">SKILLS</h2>
             <div class="row ">
                 <div class="col-lg-8 offset-lg-2 skills">
-                    <div class="skill-item"><img src="/images/html.svg" alt="HTML5"></div>
-                    <div class="skill-item"><img src="/images/css.svg" alt="CSS"></div>
-                    <div class="skill-item"><img src="/images/javascript.svg" alt="Javascript"></div>
-                    <div class="skill-item"><img src="/images/Bootstrap_logo.svg.png" alt="Bootsrap"></div>
-                    <div class="skill-item"><img src="/images/jquery.svg" alt="Jquery"></div>
-                    <div class="skill-item"><img src="/images/python.svg" alt="Python"></div>
-                    <div class="skill-item"><img src="/images/django.svg" alt="Django"></div>
-                    <div class="skill-item"><img src="/images/git.svg" alt="Git"></div>
-                    <div class="skill-item"><i class="bi bi-github" style="font-size: 2.4rem;"></i></div>
-                    <div class="skill-item"><img src="/images/mysql.svg" alt="MySql" style="font-size: 3rem;"></div>
+                    <div class="skill-item"><img class="sk"  src="/images/html.svg" alt="HTML5"></div>
+                    <div class="skill-item"><img class="sk" src="/images/css.svg" alt="CSS"></div>
+                    <div class="skill-item"><img class="sk" src="/images/javascript.svg" alt="Javascript"></div>
+                    <div class="skill-item"><img class="sk" src="/images/Bootstrap_logo.svg.png" alt="Bootsrap"></div>
+                    <div class="skill-item"><img class="sk" src="/images/jquery.svg" alt="Jquery"></div>
+                    <div class="skill-item"><img class="sk" src="/images/git.svg" alt="Git"></div>
+                    <div class="skill-item"><i class="sk bi bi-github" style="font-size: 2.4rem;"></i></div>
+                    <div class="skill-item"><img class="sk" src="/images/python.svg" alt="Python"></div>
+                    <div class="skill-item"><img class="sk" src="/images/django.svg" alt="Django"></div>
+                    <div class="skill-item"><img class="sk" src="/images/mysql.svg" alt="MySql" style="font-size: 3rem;"></div>
                 </div>
             </div>
         </div>
-        <div class="container project-section section" id="projects" data-aos="fade-up-right" >
+        <div class="container project-section section" id="projects" data-aos="fade-right" >
             <h2 class="fw-bolder heading text-center">PROJECTS</h2>
         </div>
-        <div class="container contact-section section" id="contact" data-aos="fade-up-right" >
+        <div class="container contact-section section" id="contact" data-aos="fade-right" >
             <h2 class="fw-bolder heading text-center">CONTACT</h2>
             <div class="row mt-5">
-                <div class="container left-sec-para col-sm-12 col-lg-4 d-flex flex-column">
+                <div class="container left-sec-para col-sm-12 col-md-6 col-lg-4 d-flex flex-column align-items-center">
                     <div class="fs-4">Drop Me a Message</div>
                     <div style="font-size: 1rem;">Let's Create something together &#129311;</div>
                     <div class="mail-box d-flex justify-content-center align-items-center ps-3 ">
@@ -129,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container msg-form col-sm-12 col-lg-8">
+                <div class="container msg-form col-sm-12 col-lg-8 col-md-6">
                     <div class="form-heading">Send us a message &#128640;</div>
                     <div class="form mt-3">
                         <input type="text" class="form-control mb-3" placeholder="Full name*">
@@ -154,7 +163,7 @@
             </div>
             <div class="social-icons col-lg-3 col-sm-12">
                 <h5>SOCIALS</h5>
-                <div class="icons d-flex mt-4">
+                <div class="icons d-flex">
                     <a href=""><i class="bi bi-twitter-x" style="font-size: 1.1rem;"></i></a>
                     <a href=""><i class="bi bi-instagram" style="font-size: 1.1rem;"></i></a>
                     <a href=""><i class="bi bi-github" style="font-size: 1.1rem;"></i></a>
@@ -164,7 +173,7 @@
             </div>
         </div>
         <div class="copyright-box mt-5 mb-3 col-lg-12 col-sm-12 text-center">
-            <p><i class="bi bi-c-circle me-2"></i>Copyright 2024. Made By <a href="">muhammedadil.com</a></p>
+            <p><i class="bi bi-c-circle me-2"></i>Copyright 2024. Made By <a href="">muhammedadil.in</a></p>
         </div>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
