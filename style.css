@@ -233,35 +233,14 @@ h2:not(.name-sec h1){
 
 .left-sec-para{
     gap: 10px;
+    margin-top: 6rem;
 }
 
-.mail-box{
-    font-size: 15px;
-    width: 250px;
-    height: 60px;
-    line-height: 16px;
-    gap: 10px;
-    border-radius: 10px;
-    background-color:var(--bgop-clr);
-    box-shadow: 3px 4px 0.4 0.8;
-}
-
-.mail-box p {
-    padding-top: 12px;
-}
-
-.mail-icon{
-    width: 35px;
-    height: 25px;
-    border-radius: 7px;
-    color: rgb(15 23 42);
-    background-color:var(--accent-clr);
-}
 
 .msg-form{
     background-color:#172136;
-    padding: 16px !important;
-    width: 22.5rem !important;
+    padding: 1.2rem !important;
+    width: 27rem !important;
     border-radius: 15px;
 }
 
@@ -280,6 +259,7 @@ h2:not(.name-sec h1){
     }
     .left-sec-para{
         margin-bottom: 1.2rem;
+        margin-top: 1.7rem;
     }
     .about-section{
         height: 120vh !important;
@@ -294,7 +274,7 @@ h2:not(.name-sec h1){
 
     .skill-section .row .skills{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
     }
@@ -314,6 +294,7 @@ h2:not(.name-sec h1){
     }
 }
 @media (min-width:576px) and (max-width:768px){
+    /* Contact section paragraph */
     .left-sec-para{
         margin-bottom: 1.2rem;
     }
