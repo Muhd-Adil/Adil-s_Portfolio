@@ -26,7 +26,7 @@ navLinks.forEach(link => {
         });
       } else {
         window.scrollTo({
-          top: targetSection.offsetTop - (nav.offsetHeight || 50),
+          top: targetSection.offsetTop - (nav.offsetHeight + 20),
           behavior: 'smooth'
         });
       }
