@@ -1,3 +1,40 @@
+//Glowing hover effect
+    // document.addEventListener('mousemove', function(e) {
+    //     const glow = document.querySelector('.glow');
+    //     const x = e.clientX;
+    //     const y = e.clientY;
+
+    //     // Ensure the glow stays within the viewport horizontally
+    //     const maxX = window.innerWidth - (glow.offsetWidth / 2);
+    //     const minX = glow.offsetWidth / 2;
+
+    //     const posX = Math.min(Math.max(x, minX), maxX);
+    //     const posY = y;
+
+    //     glow.style.left = `${posX}px`;
+    //     glow.style.top = `${posY}px`;
+    // });
+    document.addEventListener('mousemove', function(e) {
+        const glow = document.querySelector('.glow');
+        const x = e.clientX;
+        const y = e.clientY;
+
+        // Constrain the glow element within the viewport horizontally
+        const maxX = window.innerWidth - (glow.offsetWidth / 2);
+        const minX = glow.offsetWidth / 2;
+        
+        // Constrain the glow element within the viewport vertically
+        const maxY = window.innerHeight - (glow.offsetHeight / 2);
+        const minY = glow.offsetHeight / 2;
+
+        const posX = Math.min(Math.max(x, minX), maxX);
+        const posY = Math.min(Math.max(y, minY), maxY);
+
+        glow.style.left = `${posX}px`;
+        glow.style.top = `${posY}px`;
+    });
+
+
 //Text typing Animation
 
 let typingEffect= new Typed(".name-spc",{
@@ -43,9 +80,6 @@ $(document).ready(function(){
       $('.navbar-collapse').removeClass('show');
       $('#MyCheckbox').prop('checked', false);
     }
-
-
-   
   });
 });
 

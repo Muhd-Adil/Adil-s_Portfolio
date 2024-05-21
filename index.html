@@ -18,6 +18,7 @@
 </head>
     <body>
     <div class="container-fluid">
+        <div class="glow"></div>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand ms-sm-5 ms-3 h3">MUHAMMED ADIL</a>
@@ -140,13 +141,20 @@
                 </div>
                 <div class="container msg-form col-sm-12 col-lg-8 col-md-6">
                     <div class="form-heading">Message &#128640;</div>
-                    <div class="form mt-3">
-                        <input type="text" class="form-control mb-3" placeholder="Full name*">
-                        <input type="email" class="form-control mb-3" placeholder="Email address*">
+                    <form class="form mt-3">
+                        <div class="name_field">
+                            <input type="text" class="form-control mb-3" placeholder="Full name*" autocomplete="off">
+                            <div class="error-text">Full Name Required</div>
+                        </div>
+                        <div class="email_field">
+                            <input type="email" class="form-control mb-3" placeholder="Email address*" autocomplete="off">
+                            <div class="error-text">Email Required</div>
+                        </div>
                         <textarea class="form-control mb-3" cols="5" rows="7" 
-                            placeholder="Message*"></textarea>
-                        <button class="btn btn-primary" type="button">Send message</button>
-                    </div>
+                            placeholder="Message*" autocomplete="off"></textarea>
+                            <div class="error-text">Message Required</div>
+                        <button class="btn btn-primary" type="submit">Send message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -181,7 +189,8 @@
     <script>
         AOS.init();
     </script>
-    <script src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

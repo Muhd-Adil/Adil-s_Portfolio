@@ -5,6 +5,30 @@
     box-sizing: border-box;
     font-family: 'Montserrat' , sans-serif !important;
 }
+body{
+    overflow-x:hidden ;
+    position: relative;
+}
+
+/* Glowing hover effect */
+.glow {
+    position: fixed;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(22, 32, 53, 0.3) 0%, rgba(255, 255, 255, 0) 60%);
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    z-index: 9999;
+    transition: width 0.3s ease, height 0.3s ease,background 0.3s ease;
+}
+
+body:hover .glow{
+    width: 550spx;
+    height: 550px;
+    background: radial-gradient(circle, rgba(22, 32, 53, 0.3), rgba(255, 255, 255, 0) 70%);
+}
 
 /* Variables */
 
@@ -46,6 +70,7 @@ body{
    background-color: var(--bgop-clr);
 }
 
+/* For Breadcrumbs Menu icon */
 
 input[type="checkbox"]{
     -webkit-appearance: none;
@@ -108,6 +133,44 @@ input[type="checkbox"]:checked ~ .bar .middle{
     opacity: 0;
 }
 
+/* Nav link hover efect */
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: var(--secondary-clr) !important;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    transition: color 0.3s ease-in;
+}
+
+nav ul li a:hover{
+    color: var(--accent-clr) !important;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-clr);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 .navbar-brand{
     margin-top:10px ;
 }
@@ -116,11 +179,11 @@ input[type="checkbox"]:checked ~ .bar .middle{
     margin-top: -4px;
 }
 
-.navbar-brand,a{
+.navbar-brand,.resume-btn > a,.copyright-box a{
     color:var(--accent-clr) !important;
 }
 
-.navbar-brand:hover, nav a:hover{
+.navbar-brand:hover{
     color: #ff7f50 !important;
 }
 
@@ -242,6 +305,15 @@ h2:not(.name-sec h1){
     padding: 1.2rem !important;
     width: 27rem !important;
     border-radius: 15px;
+    box-shadow: 4px 6px 16px black;
+}
+
+.msg-form .error-text{
+    font-size: 0.8rem;
+    color: red;
+    text-align: left;
+    margin: -13px 0 10px;
+    display: none;
 }
 
 @media (max-width:576px){
@@ -282,7 +354,7 @@ h2:not(.name-sec h1){
     .footer-section{
         margin-left: -2.5rem !important;
     }
-
+    
     .selfintro-footer{
         padding-right: 0 !important;
     } 
@@ -311,6 +383,15 @@ h2:not(.name-sec h1){
     .first-para {
         padding: 0px 80px;
     }
+    
+    .contact-section{
+        height: 105vh;
+    }
+
+    .left-sec-para{
+        margin-top: 0.2rem;
+    }
+
 }
 .form-heading{
     font-size: 1.3rem;
