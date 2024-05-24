@@ -345,7 +345,7 @@ h2:not(.name-sec h1){
         height: 120vh !important;
     }
     .contact-section{
-        height: auto !important;
+        height: 110vh !important;
     }
 
     .contact-section .row{
