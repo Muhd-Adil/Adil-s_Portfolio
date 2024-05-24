@@ -324,18 +324,6 @@ h2:not(.name-sec h1){
     display: none;
 }
 
-@media (min-width:320px) and (max-width:450px){
-
-    .skill-section{
-        margin-top: 27rem !important;
-    }
-    .project-section{
-        margin-top: 11rem !important;
-    }
-
-}
-
-
 @media (max-width:576px){
     
     .first-para {
