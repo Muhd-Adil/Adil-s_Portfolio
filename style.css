@@ -325,9 +325,6 @@ h2:not(.name-sec h1){
 }
 
 @media (min-width:320px) and (max-width:450px){
-    .hero-section{
-        margin-top: 7rem !important;
-    }
 
     .skill-section{
         margin-top: 27rem !important;
