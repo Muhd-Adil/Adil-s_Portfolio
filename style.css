@@ -348,18 +348,10 @@ h2:not(.name-sec h1){
         height: auto !important;
     }
 
-    .project-section{
-        margin-top: 12rem !important;
-    }
-
     .contact-section .row{
         margin-top: 1.3rem !important;
     }
 
-    .skill-section{
-        margin-top: 10rem !important;
-    }
-    
     .skill-section .row .skills{
         display: grid;
         grid-template-columns: repeat(2,1fr);
