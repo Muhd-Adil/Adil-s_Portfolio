@@ -388,10 +388,6 @@ h2:not(.name-sec h1){
         display: none;
     }
 
-    .skill-section{
-        margin-top: 10rem !important;
-    }
-
     .first-para {
         padding: 0px 80px;
     }
