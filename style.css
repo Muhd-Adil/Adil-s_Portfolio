@@ -82,6 +82,12 @@ input[type="checkbox"]:hover{
     cursor: pointer !important;
 }
 
+.bar-container {
+    position: relative;
+    width: 30px;
+    height: 30px; /* Adjusted to ensure it covers the entire clickable area */
+}
+
 .bar{
     position: relative;
     cursor: pointer;
@@ -133,39 +139,41 @@ input[type="checkbox"]:checked ~ .bar .middle{
     opacity: 0;
 }
 
-/* Nav link hover efect */
 
-nav ul li {
-    margin: 0 1em;
-}
+/* Nav link hover effect */
 
-nav ul li a {
+
+.nav-item .nav-link {
     color: var(--secondary-clr) !important;
     text-decoration: none;
     position: relative;
     display: inline-block;
-    padding-bottom: 0.2em;
+    /* padding-bottom: 0em; */
     transition: color 0.3s ease-in;
 }
 
-nav ul li a:hover{
+.nav-item .nav-link span{
+    position: relative;
+}
+
+.nav-item .nav-link:hover{
     color: var(--accent-clr) !important;
 }
 
-nav ul li a::after {
+.nav-item .nav-link span::after {
     content: '';
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
     height: 2px;
-    bottom: 0;
     left: 0;
+    bottom: -5px;
     background-color: var(--accent-clr);
+    transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
-nav ul li a:hover::after {
+.nav-item .nav-link:hover span::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -316,6 +324,21 @@ h2:not(.name-sec h1){
     display: none;
 }
 
+@media (min-width:320px) and (max-width:450px){
+    .hero-section{
+        margin-top: 7rem !important;
+    }
+
+    .skill-section{
+        margin-top: 27rem !important;
+    }
+    .project-section{
+        margin-top: 11rem !important;
+    }
+
+}
+
+
 @media (max-width:576px){
     
     .first-para {
@@ -340,10 +363,18 @@ h2:not(.name-sec h1){
         height: auto !important;
     }
 
+    .project-section{
+        margin-top: 12rem !important;
+    }
+
     .contact-section .row{
         margin-top: 1.3rem !important;
     }
 
+    .skill-section{
+        margin-top: 10rem !important;
+    }
+    
     .skill-section .row .skills{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -380,12 +411,16 @@ h2:not(.name-sec h1){
         display: none;
     }
 
+    .skill-section{
+        margin-top: 10rem !important;
+    }
+
     .first-para {
         padding: 0px 80px;
     }
     
     .contact-section{
-        height: 105vh;
+        height: 120vh;
     }
 
     .left-sec-para{

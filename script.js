@@ -1,19 +1,33 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.getElementById('MyCheckbox');
+  const bar = document.querySelector('.bar');
+  
+  // Ensure the cursor is always a pointer when hovering over the bar container
+  bar.addEventListener('mouseenter', () => {
+      bar.style.cursor = 'pointer';
+  });
+
+  bar.addEventListener('mouseleave', () => {
+      bar.style.cursor = 'default';
+  });
+
+  // Ensure the cursor is a pointer over the entire bar, even in between spans
+  bar.querySelectorAll('span').forEach(span => {
+      span.addEventListener('mouseover', () => {
+          bar.style.cursor = 'pointer';
+      });
+
+      span.addEventListener('mouseleave', () => {
+          bar.style.cursor = 'default';
+      });
+  });
+});
+
+
+
+
+
 //Glowing hover effect
-    // document.addEventListener('mousemove', function(e) {
-    //     const glow = document.querySelector('.glow');
-    //     const x = e.clientX;
-    //     const y = e.clientY;
-
-    //     // Ensure the glow stays within the viewport horizontally
-    //     const maxX = window.innerWidth - (glow.offsetWidth / 2);
-    //     const minX = glow.offsetWidth / 2;
-
-    //     const posX = Math.min(Math.max(x, minX), maxX);
-    //     const posY = y;
-
-    //     glow.style.left = `${posX}px`;
-    //     glow.style.top = `${posY}px`;
-    // });
     document.addEventListener('mousemove', function(e) {
         const glow = document.querySelector('.glow');
         const x = e.clientX;
