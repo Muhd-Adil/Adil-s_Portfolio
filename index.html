@@ -98,9 +98,6 @@
                         possibilities together. 
                     </p>
                     <p class="mb-3">Thank you for visiting, and I look forward to embarking on this journey with you!</p>
-                    <!-- <div class="resume-btn">
-                        <a href="#contact" class="nav-link res">Contact me</a>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -134,17 +131,20 @@
                 <div class="container msg-form col-sm-12 col-lg-8 col-md-6">
                     <div class="form-heading">Message &#128640;</div>
                     <form class="form mt-3">
-                        <div class="name_field">
-                            <input type="text" class="form-control mb-3" placeholder="Full name*" autocomplete="off">
+                        <div class="name_field field">
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Full name*" autocomplete="off">
                             <div class="error-text">Full Name Required</div>
                         </div>
-                        <div class="email_field">
-                            <input type="email" class="form-control mb-3" placeholder="Email address*" autocomplete="off">
-                            <div class="error-text">Email Required</div>
+                        <div class="email_field field">
+                            <input type="text" id="email" class="form-control mb-3" placeholder="Email address*" autocomplete="off">
+                            <div class="error-text email-error">Email Required</div>
                         </div>
-                        <textarea class="form-control mb-3" cols="5" rows="7" 
-                            placeholder="Message*" autocomplete="off"></textarea>
+                        <div class="field">
+                            <textarea class="form-control mb-3" cols="5" rows="7" 
+                            placeholder="Message*" id="message" autocomplete="off">
+                            </textarea>
                             <div class="error-text">Message Required</div>
+                        </div>
                         <button class="btn btn-primary" type="submit">Send message</button>
                     </form>
                 </div>
@@ -182,6 +182,7 @@
         AOS.init();
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
 </body>
 

@@ -316,13 +316,49 @@ h2:not(.name-sec h1){
     box-shadow: 4px 6px 16px black;
 }
 
-.msg-form .error-text{
+.contact-section textarea{
+    resize: none;
+}
+
+.swal2-title-custom{
+    color:#545454;
+}
+
+.field.error .form-control{
+    border-color: red !important;
+}
+
+.field .error-text{
     font-size: 0.8rem;
     color: red;
     text-align: left;
     margin: -13px 0 10px;
     display: none;
 }
+
+.field.error .error-text{
+    display: block;
+}
+
+.form-heading{
+    font-size: 1.3rem;
+    color:var(--accent-clr);
+}
+
+textarea{
+    text-align: left !important;
+}
+input,textarea{
+    background-color:var(--bgop-clr) !important;
+    border-color: var(--secondary-clr) !important;
+    color:var(--accent-clr) !important;
+}
+
+input::placeholder,textarea::placeholder{
+    color: var(--secondary-clr) !important;
+}
+
+/* Media query goes here */
 
 @media (max-width:576px){
     
@@ -342,10 +378,11 @@ h2:not(.name-sec h1){
         margin-top: 1.7rem;
     }
     .about-section{
-        height: 120vh !important;
+        margin-bottom: 13rem !important;
     }
+
     .contact-section{
-        height: 110vh !important;
+        
     }
 
     .contact-section .row{
@@ -353,7 +390,7 @@ h2:not(.name-sec h1){
     }
 
     .skill-section{
-        height: 120vh !important;
+        margin-bottom: 10rem !important;
     }
     
     .skill-section .row .skills{
@@ -377,7 +414,7 @@ h2:not(.name-sec h1){
         padding-top: .5rem;
     }
 }
-@media (min-width:576px) and (max-width:768px){
+@media (min-width:577px) and (max-width:768px){
     /* Contact section paragraph */
     .left-sec-para{
         margin-bottom: 1.2rem;
@@ -410,19 +447,7 @@ h2:not(.name-sec h1){
     }
 
 }
-.form-heading{
-    font-size: 1.3rem;
-    color:var(--accent-clr);
-}
-input,textarea{
-    background-color:var(--bgop-clr) !important;
-    border-color: var(--secondary-clr) !important;
-    color:var(--accent-clr) !important;
-}
 
-input::placeholder,textarea::placeholder{
-    color: var(--secondary-clr) !important;
-}
 
 /* Footer section */
 
