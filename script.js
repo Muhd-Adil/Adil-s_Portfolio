@@ -104,7 +104,7 @@ $(document).ready(function(){
 
 
     Email.send({
-      SecureToken :"007e9ac6-0415-4668-ac93-08b36695de03 ",
+      SecureToken :"007e9ac6-0415-4668-ac93-08b36695de03",
       // Host : "smtp.elasticemail.com",
       // Username : "adilpydev@gmail.com",
       // Password : "DC460408613796989DE133A17BA537A9802F",
