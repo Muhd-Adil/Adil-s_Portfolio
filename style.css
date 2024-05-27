@@ -344,10 +344,6 @@ h2:not(.name-sec h1){
     font-size: 1.3rem;
     color:var(--accent-clr);
 }
-
-textarea{
-    text-align: left !important;
-}
 input,textarea{
     background-color:var(--bgop-clr) !important;
     border-color: var(--secondary-clr) !important;
