@@ -191,8 +191,8 @@ $(document).ready(function(){
         }
   });
 
-  window.addEventListener("load", (event) => {
-    console.log("page is fully loaded");
-    const txtArea=document.querySelector("textarea");
-    txtArea.value="";
-  });
+  // window.addEventListener("load", (event) => {
+  //   console.log("page is fully loaded");
+  //   const txtArea=document.querySelector("textarea");
+  //   txtArea.value="";
+  // });
