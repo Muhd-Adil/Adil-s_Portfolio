@@ -190,3 +190,9 @@ $(document).ready(function(){
             return false;
         }
   });
+
+  window.addEventListener("load", (event) => {
+    console.log("page is fully loaded");
+    const txtArea=document.querySelector("textarea");
+    txtArea.value="";
+  });
