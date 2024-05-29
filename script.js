@@ -21,6 +21,21 @@
     });
 
 
+//Preloading Animation
+
+const preloader=gsap.timeline({paused:true})
+
+// gsap.set(".navbar",{opacity:0})
+// gsap.set(".hero-section",{opacity:0})
+// gsap.set(".hero-sec-socials",{opacity:0})
+
+
+preloader.to(".logo-container",{opacity:1,delay:1,duration:0.5})
+.to(".loading-screen",{yPercent:-100,duration:1.3,ease:"expo.inOut"})
+// .to(".hero-section",{opacity:1 ,duration:0.3})
+// .to(".navbar",{opacity:1,duration:0.3})
+// .to(".hero-sec-socials",{opacity:1,duration:0.3})
+preloader.play()
 //Text typing Animation
 
 let typingEffect= new Typed(".name-spc",{
@@ -34,31 +49,27 @@ let typingEffect= new Typed(".name-spc",{
 
 //For Smooth Scrolling
 
-document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const nav = document.querySelector('nav');
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent default anchor link behavior
-      const targetSection = document.getElementById(this.hash.substring(1));
+const navLinks = document.querySelectorAll('.link');
+const nav = document.querySelector('nav');
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default anchor link behavior
+    const targetSection = document.getElementById(this.hash.substring(1));
 
-      if (!targetSection) {
-        console.error('Target section not found:', this.hash.substring(1));
-        return;
+    // Enhanced smooth scrolling with optional offset for navbar height
+    if (window.innerWidth <= 768) { // Adjust the width as needed for your mobile breakpoint
+        window.scrollTo({
+          top: targetSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      } else {
+        window.scrollTo({
+          top: targetSection.offsetTop - (nav.offsetHeight + 10),
+          behavior: 'smooth'
+        });
       }
-
-      const offset = window.innerWidth <= 768 ? 80 : (nav.offsetHeight + 10);
-
-      window.scrollTo({
-        top: targetSection.offsetTop - offset,
-        behavior: 'smooth'
-      });
-
-      console.log('Scrolling to:', targetSection.id, 'Offset:', offset);
-    });
   });
 });
-
 
 // For Navbar fading
 
