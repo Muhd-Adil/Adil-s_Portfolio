@@ -272,12 +272,13 @@ h2:not(.name-sec h1){
 /* Hero Section */
 .hero-sec-socials{
     position:absolute;
-    top: 50%;
+    top: 9%;
     transform: translateY(-50%);
     background-color:var(--bgop-clr);
     padding: 1rem 1.2rem;
     border-radius: 6px;
     box-shadow: 4px 6px 16px black ;
+    margin-right: 2rem;
 
     display: flex;
     flex-direction: column;
@@ -409,7 +410,7 @@ input::placeholder,textarea::placeholder{
     }
 
     .contact-section{
-        
+        height: 120vh;
     }
 
     .contact-section .row{
@@ -451,8 +452,13 @@ input::placeholder,textarea::placeholder{
         width: 27rem !important;
     }
     .contact-section{
-        height: 110vh;
+        height: 120vh;
     }
+
+    .hero-sec-socials{
+        display: none;
+    }
+
 }
 
 @media (min-width:769px) and (max-width:991px){
@@ -474,7 +480,6 @@ input::placeholder,textarea::placeholder{
     }
 
 }
-
 
 /* Footer section */
 

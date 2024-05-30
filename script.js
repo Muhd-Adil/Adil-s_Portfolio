@@ -25,17 +25,19 @@
 
 const preloader=gsap.timeline({paused:true})
 
-// gsap.set(".navbar",{opacity:0})
-// gsap.set(".hero-section",{opacity:0})
-// gsap.set(".hero-sec-socials",{opacity:0})
+gsap.set(".navbar",{opacity:0})
+gsap.set(".hero-section",{opacity:0})
+gsap.set(".hero-sec-socials",{opacity:0})
 
 
 preloader.to(".logo-container",{opacity:1,delay:1,duration:0.5})
 .to(".loading-screen",{yPercent:-100,duration:1.3,ease:"expo.inOut"})
-// .to(".hero-section",{opacity:1 ,duration:0.3})
-// .to(".navbar",{opacity:1,duration:0.3})
-// .to(".hero-sec-socials",{opacity:1,duration:0.3})
+.to(".hero-section",{opacity:1 ,duration:0.3})
+.to(".navbar",{opacity:1,duration:0.3})
+.to(".hero-sec-socials",{opacity:1,duration:0.3})
 preloader.play()
+
+
 //Text typing Animation
 
 let typingEffect= new Typed(".name-spc",{
