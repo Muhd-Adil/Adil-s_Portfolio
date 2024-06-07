@@ -2,7 +2,7 @@
 *,*::before,*::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: 'Montserrat' , sans-serif !important;
 }
 body{
@@ -86,7 +86,7 @@ body{
 }
 
 .logo-container > img{
-    width: 10%;
+    width: 35%;
 }
 /* Navbar section goes here*/
 
@@ -204,6 +204,9 @@ input[type="checkbox"]:checked ~ .bar .middle{
     transform-origin: bottom left;
 }
 
+.navbar-brand img{
+    width: 20%;
+}
 
 .navbar-brand{
     margin-top:10px ;
@@ -217,9 +220,9 @@ input[type="checkbox"]:checked ~ .bar .middle{
     color:var(--accent-clr) !important;
 }
 
-.navbar-brand:hover{
+/* .navbar-brand:hover{
     color: #ff7f50 !important;
-}
+} */
 
 h2:not(.name-sec h1){
     color: var(--accent-clr)!important;
@@ -330,6 +333,12 @@ h2:not(.name-sec h1){
     width: 2.5rem;
     height: 2.5rem;
     transition: transform 0.2s ease-in-out;
+}
+
+/* Project-section */
+
+.wrapper .gear{
+    position: relative;
 }
 
 /* Contact Section */
