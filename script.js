@@ -49,6 +49,14 @@ let typingEffect= new Typed(".name-spc",{
     backDelay:2500
 })
 
+let typingEffect2= new Typed(".load-text",{
+  strings:["Coming Soon >>>"],
+  loop:true,
+  typeSpeed:150,
+  // backSpeed:50,
+  startDelay:500,
+  backDelay:2500
+})
 //For Smooth Scrolling
 
 const navLinks = document.querySelectorAll('.link');

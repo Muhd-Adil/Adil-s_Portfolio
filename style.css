@@ -337,8 +337,15 @@ h2:not(.name-sec h1){
 
 /* Project-section */
 
-.wrapper .gear{
-    position: relative;
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.load-text{
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 /* Contact Section */
