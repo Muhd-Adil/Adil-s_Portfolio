@@ -71,7 +71,7 @@ body{
     width: 100vw;
     height: 100vh;
     z-index: 1000;
-    background-color:var(--primary-clr);
+    background-color:var(--bgop-clr);
     display: flex;
     align-items: center;
     justify-content: center;
