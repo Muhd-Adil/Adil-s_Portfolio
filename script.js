@@ -23,7 +23,17 @@
 
 //Preloading Animation
 
-const preloader=gsap.timeline({paused:true})
+//scrollbar hiding
+
+document.body.classList.add('preloader-active');
+
+
+const preloader=gsap.timeline({
+  paused:true,
+  onComplete:function() {
+    document.body.classList.remove('preloader-active');
+  }
+});
 
 gsap.set(".navbar",{opacity:0})
 gsap.set(".hero-section",{opacity:0})

@@ -51,6 +51,7 @@ body{
 /* For Scrollbar animation */
 ::-webkit-scrollbar{
     background-color: transparent;
+    margin-top: 80px;
     width: 8px;
 }
 
@@ -64,6 +65,11 @@ body{
 }
 
 /* Loading Section*/
+
+body.preloader-active{
+    overflow: hidden;
+}
+
 .loading-screen{
     position: fixed;
     top: 0;
