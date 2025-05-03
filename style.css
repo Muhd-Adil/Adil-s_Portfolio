@@ -341,17 +341,39 @@ h2:not(.name-sec h1){
     transition: transform 0.2s ease-in-out;
 }
 
+
+.db{
+    width: 3rem !important;
+    height: 3rem;
+}
+
 /* Project-section */
 
-.loader{
+.project-card-wrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+    justify-content: center !important;
 }
-.load-text{
-    font-size: 2rem;
-    font-weight: 600;
+
+.project-card{
+    background-color: var(--bgop-clr);
+    color: var(--secondary-clr);
+    border-radius: 20px;
+    box-shadow: 4px 6px 16px black;
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-img-top{
+    height: 180px;
+}
+
+
+.project-card .card-body{
+    padding: 10px 0px 0px 0px;
+}
+
+.card-text{
+    text-align: justify;
 }
 
 /* Contact Section */
@@ -360,7 +382,6 @@ h2:not(.name-sec h1){
     gap: 10px;
     margin-top: 6rem;
 }
-
 
 .msg-form{
     background-color:#172136;
@@ -448,6 +469,10 @@ input::placeholder,textarea::placeholder{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
         gap: 20px;
+    }
+
+    .project-section{
+        height: 180vh;
     }
 
     .footer-section{
