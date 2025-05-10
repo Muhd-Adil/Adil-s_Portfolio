@@ -33,8 +33,8 @@ body:hover .glow{
 /* Variables */
 
 :root{
-    --primary-clr:rgb(15 23 42);
-    --secondary-clr:rgb(148 163 184);
+    --primary-clr:rgb(15, 23, 42);
+    --secondary-clr:rgb(148, 163, 184);
     --accent-clr:whitesmoke;
     --bgop-clr:rgb(22, 32, 53);
 }
